@@ -98,15 +98,3 @@ def export_to_pdf(processed_images, output_path):
     )
 
     print("Xuat PDF thanh cong:", output_path)
-
-
-# Vi du su dung:
-image = cv2.imread("document.png", cv2.IMREAD_GRAYSCALE)
-
-if image is not None:
-    export_to_pdf(
-        [image],
-        "tai_lieu_da_xu_ly.pdf"
-    )
-else:
-    print("Khong tim thay anh!")
